@@ -12,5 +12,7 @@ describe "FirstPages" do
   	  page.should have_selector('title', 
   	  	 :text => "SCCA Marketing | Provider Profiles")
   	end
+
+  	
   end
 end

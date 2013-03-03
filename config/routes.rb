@@ -1,4 +1,10 @@
 ProviderProfile::Application.routes.draw do
+
+
+  get "approviders/new"
+
+  root :to => 'first_pages#home'
+
   get "first_pages/home"
 
   get "first_pages/about"
