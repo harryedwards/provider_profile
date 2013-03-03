@@ -1,4 +1,8 @@
 ProviderProfile::Application.routes.draw do
+  get "first_pages/home"
+
+  get "first_pages/about"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
