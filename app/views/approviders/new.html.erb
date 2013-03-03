@@ -1,2 +1,26 @@
-<h1>Approviders#new</h1>
-<p>Find me in app/views/approviders/new.html.erb</p>
+<% provide(:title, 'Approvider form') %>
+<h1>SCCA Advanced Practice Provider Profile Form</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@user) do |f| %>
+
+    	<%= f.label :first_name %>
+    	<%= f.text_field :first_name %>
+
+    	<%= f.label :first_name %>
+    	<%= f.text_field :first_name %>
+
+    	<%= f.label :name_appears, "Your name as you would like it to appear" %>
+    	<%= f.text_field  :name_appears %>
+
+    	<%= f.label :title %>
+    	<%= f.text_field :title %>   	
+
+    	<%= f.label :philosophy %>
+    	<%= f.text_field :philosophy %>
+       <br/>
+    	<%= f.submit "Create profile", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+ </div>
