@@ -1,0 +1,14 @@
+<% if @approvider.errors.any? %>
+  <div id="error_explanation">
+    <div class="alert alert-errors">
+      Your submission contains <%= pluralize(@approvider.errors.count, "error") %>.
+    </div>
+
+    <ul>
+    	<% @approvider.errors.full_messages.each do |msg| %>
+    	<li>* <%= msg %></li>
+        <% end %>
+    </ul>
+   </div>
+
+<% end %>

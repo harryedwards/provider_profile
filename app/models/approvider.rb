@@ -25,9 +25,6 @@ class Approvider < ActiveRecord::Base
   validates :title, presence: true
   validates :philosophy, presence: true
 
-
-
-
   
 end
 

@@ -1,5 +1,9 @@
-<h2><%=  @user.first_name %> <%= @user.last_name %></h2>
+<h2>Thanks <%=  @approvider.first_name %> for your submission.</h2>
 
-<p>Name as it should appear on website: <b><%=@user.name_appears %> </b></p>
-<p>Title: <b><%=@user.title %> </b></p>
-<p>Philosophy: <b><%=@user.philosophy %> </b> </p>
+
+<p><b>Your name:</b> <%=@approvider.name_appears %></p>
+<p><b>Title:</b> <%=@approvider.title %> </p>
+<p><b>Philosophy: </b><%=@approvider.philosophy %> </p>
+
+
+<%= link_to "Edit Your Profile", edit_approvider_path(@approvider.id), class: "btn btn-large btn-primary" %>
