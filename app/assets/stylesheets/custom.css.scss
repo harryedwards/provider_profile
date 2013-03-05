@@ -47,5 +47,15 @@ textarea {
 	@extend .error;
 }
 
+.form-horizontal .field_with_errors
+{
+ margin: 0;
+}
+
+.form-horizontal .field_with_errors:before, .form-horizontal .field_with_errors::after 
+{
+ display: block;
+ clear: none;
+}
 
 
